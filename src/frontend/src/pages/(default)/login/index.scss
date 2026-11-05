@@ -1,0 +1,248 @@
+.login-btn {
+  --ant-font-size-base: 13px;
+  --ant-border-radius-base: 8px;
+  --ant-button-font-weight: 500;
+  @apply w-full h-[54px] font-[Inter] mt-3;
+}
+
+.login-main-wrap {
+  width: 100%;
+  padding: 56px 110px 10px;
+  border-radius: 0 20px 20px 0;
+  position: absolute;
+  background: #ffffff;
+  height: 100%;
+
+  .login-top {
+    position: absolute;
+    top: 56px;
+    left: 110px;
+    width: auto;
+  }
+
+  .login-form {
+    width: 391px;
+    font-family: Inter;
+
+    .login-form-info {
+      color: #000000;
+      text-align: center;
+
+      .login-form-info-title {
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 58px;
+        font-family: Inter;
+      }
+
+      .login-form-info-desc {
+        font-size: 16px;
+        line-height: 24px;
+        margin: 16px 0 60px;
+        font-family: Inter;
+      }
+    }
+
+    .google {
+      height: 54px;
+      border-radius: 10px;
+      color: #000000;
+      border: 1px solid #EEEFF1;
+      background: #FFFFFF;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      cursor: pointer;
+      font-family: Inter;
+
+      img {
+        margin-right: 16px;
+      }
+
+      &:hover {
+        border: 1px solid #dcdde0;
+      }
+
+      .login-btn-google {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        border-radius: 10px;
+        font-family: Inter;
+
+        &:hover {
+          background-color: #fff;
+        }
+
+        .google__btn {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          left: 0;
+          top: 0;
+          z-index: 2;
+          opacity: 0.01;
+          font-family: Inter;
+
+          ::v-deep(.nsm7Bb-HzV7m-LgbsSe) {
+            width: 100% !important;
+            max-width: 100% !important;
+            height: 50px !important;
+          }
+
+          ::v-deep(.S9gUrf-YoZ4jf, .S9gUrf-YoZ4jf *) {
+            iframe {
+              width: 100% !important;
+              max-width: 100% !important;
+              height: 50px !important;
+              margin: 0 !important;
+            }
+          }
+        }
+      }
+    }
+
+    .or {
+      color: #000000;
+      height: 24px;
+      font-size: 16px;
+      font-weight: 400;
+      margin: 16px 0;
+      text-align: center;
+      font-family: Inter;
+    }
+
+    .ant-form-item {
+      margin-bottom: 20px;
+    }
+
+    .ant-input {
+      border-radius: 10px;
+      height: 54px;
+      font-family: Inter;
+    }
+
+    .ant-input,
+    .ant-input-affix-wrapper {
+      border-radius: 10px;
+      height: 54px;
+      font-family: Inter;
+    }
+
+    .ant-input:focus {
+      box-shadow: none;
+    }
+
+  }
+
+  .ant-input-password{
+    font-family: Inter;
+  }
+
+
+  .forgot-password {
+    text-align: right;
+    color: #999999;
+    line-height: 16px;
+    font-family: Inter;
+    cursor: pointer;
+
+    &:hover {
+      color: #2E2BD9;
+    }
+  }
+
+  .privacy-policy {
+    color: #999999;
+    font-size: 14px;
+    text-align: center;
+    font-family: Inter;
+    line-height: 20px;
+
+    a {
+      text-decoration: underline;
+
+      &:hover {
+        color: #2E2BD9;
+      }
+    }
+  }
+}
+
+.spline-viewer-wrap {
+  display: none;
+}
+
+.login-main-wrap {
+  width: 100%;
+}
+@media screen and (max-width: 1366px) and (orientation: landscape) {
+  .login-main-wrap .login-top {
+    top: 30px;
+    left: 50px;
+    width: auto;
+  }
+
+  .login-main-wrap .login-form .login-form-info .login-form-info-title {
+    font-size: 42px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .login-main-wrap .login-top {
+    top: 30px;
+    left: 50px;
+    width: auto;
+  }
+
+  .login-main-wrap .login-form .login-form-info .login-form-info-title {
+    font-size: 38px;
+  }
+  .login-form {
+    scale: 0.9;
+  }
+}
+
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+  .login-main-wrap .login-top {
+    top: 30px;
+    left: 50px;
+    width: auto;
+  }
+
+  .login-main-wrap .login-form .login-form-info .login-form-info-title {
+    font-size: 42px;
+  }
+}
+@media screen and (min-width: 768px) and (orientation: landscape) {
+  .spline-viewer-wrap {
+    display: block;
+  }
+
+  .login-main-wrap {
+    width: 50%;
+  }
+}
+
+
+
+
+
+
+.ant-switch.ant-switch-small {
+  height: 18px;
+  line-height: 18px;
+}
+
+:deep(.ant-switch.ant-switch-small .ant-switch-handle) {
+  width: 14px;
+  height: 14px;
+}
+
+:deep(.ant-switch.ant-switch-small.ant-switch-checked .ant-switch-handle) {
+  inset-inline-start: calc(100% - 16px);
+}

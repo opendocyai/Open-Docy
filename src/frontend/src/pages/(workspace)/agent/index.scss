@@ -1,0 +1,104 @@
+:deep(.column-money) {
+  @apply text-[13px] bg-[#faf9fe];
+}
+
+.ant-input {
+  @apply min-h-[28px] font-[Inter] fw-400 text-[13px];
+}
+
+.top-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+
+  .top-left {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    span,
+    button {
+      height: 28px;
+      display: flex;
+      align-items: center;
+    }
+
+    :deep(.ant-input) {
+      font-size: 12px;
+      background-color: transparent;
+    }
+
+    a {
+      cursor: pointer;
+    }
+
+    .sort-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .icon {
+        font-size: 16px;
+      }
+
+      .sort-by {
+        font-size: 12px;
+        margin-left: 6px;
+        color: #838486;
+        display: flex;
+        align-items: center;
+
+        span {
+          color: #000000;
+          margin-left: 4px;
+        }
+      }
+    }
+  }
+
+  .top-right {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    button {
+      height: 38px;
+      font-size: 12px;
+      font-family: Inter;
+    }
+  }
+}
+
+.display-type {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  .display-icon {
+    font-size: 27px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.table-pagination {
+  font-size: 13px;
+  font-family: Inter;
+
+  :deep(li) {
+    height: 28px;
+    line-height: 26px;
+  }
+
+  :deep(.ant-select-selector) {
+    height: 28px;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    font-family: Inter;
+  }
+}

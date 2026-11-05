@@ -1,0 +1,24 @@
+.ant-drawer-header {
+  @apply relative;
+  h4 {
+    @apply text-[16px] font-[Inter] fw-600 c-black mb-0;
+  }
+}
+
+.ant-drawer-close {
+  @apply absolute top-1/2 right-0 transform-translate-y--1/2;
+}
+
+.ant-drawer .ant-drawer-body {
+  @apply p-[15px];
+}
+
+.ant-list .ant-list-item{
+  @apply px-0;
+}
+.content-box a{
+  text-decoration: underline;
+  &:hover {
+    color: #2E2BD9;
+  }
+}

@@ -1,0 +1,43 @@
+# Rendered by docker/entrypoint.sh on every boot from the {{DOCY_*}}
+# placeholders. Configure the container through environment variables, not
+# this file. See docs/docker-deployment.md.
+
+[DEFAULT]
+log_dir =
+tmp_dir = temp
+secret = {{DOCY_SECRET}}
+timezone = {{DOCY_TIMEZONE}}
+agent_lock_ttl = 10
+;Webhook endpoint policy: https-only by default; set true to allow http targets.
+webhook_allow_http = {{DOCY_WEBHOOK_ALLOW_HTTP}}
+;Comma-separated exact hostnames allowed to target private/internal addresses
+;and to use http (empty = disabled).
+webhook_allowed_hosts = {{DOCY_WEBHOOK_ALLOWED_HOSTS}}
+
+[Security]
+api_key = {{DOCY_API_KEY}}
+secret_key = {{DOCY_SECRET_KEY}}
+password_level = medium
+password_min_length = 12
+password_max_length = 128
+jwt_secret_key = {{DOCY_JWT_SECRET_KEY}}
+algorithm = HS256
+access_token_expire_minutes = 1500
+refresh_token_expire_minutes = 1440
+verification_code_expire_minutes = 30
+oauth_access_token_expire_minutes = 1440
+oauth_refresh_token_expire_minutes = 43200
+
+[S3]
+driver_type = {{DOCY_STORAGE_DRIVER}}
+endpoint_url = {{DOCY_S3_ENDPOINT_URL}}
+aws_access_key_id = {{DOCY_S3_ACCESS_KEY}}
+aws_secret_access_key = {{DOCY_S3_SECRET_KEY}}
+aws_default_region = {{DOCY_S3_REGION}}
+bucket = {{DOCY_S3_BUCKET}}
+
+[Server]
+http_server_host = 0.0.0.0
+http_server_port = 3000
+public_base_url = {{DOCY_PUBLIC_BASE_URL}}
+cors_origins = {{DOCY_CORS_ORIGINS}}

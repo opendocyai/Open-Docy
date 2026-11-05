@@ -1,0 +1,67 @@
+.card-wrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  flex-wrap: wrap;
+  gap: 30px;
+
+  .my-card-item {
+    height: 189px;
+
+    :deep(.ant-card-body) {
+      padding: 0px 15px;
+    }
+
+    .my-card-info {
+      height: 189px;
+      font-family: Inter;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 18px;
+      color: #000000;
+
+      .card-title {
+        .card-icon {
+          width: 33px;
+          height: 33px;
+          margin-right: 10px;
+        }
+
+        span {
+          flex: 1;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 1;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+  }
+}
+
+.generated-card {
+  border: 1px solid #F1EEFF;
+  background-color: #FAF9FE;
+}
+
+.failed-card {
+  border: 1px solid #FFEEEE;
+  background-color: #FEF9F9;
+}
+
+.my-card-info-generated {
+  border-color: #F1EEFF;
+}
+
+.my-card-info-failed {
+  border-color: #FFEEEE;
+}
+
+:deep(.ant-card .ant-card-actions) {
+  border-top: 0px !important;
+}
+
+.ant-btn-default:disabled {
+  color: #ffffff;
+  background-color: #DEDEDE !important;
+}

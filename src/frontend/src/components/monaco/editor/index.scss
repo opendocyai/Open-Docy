@@ -1,0 +1,6 @@
+:deep(.cm-editor) {
+	@apply h-full;
+	&.cm-focused{
+		@apply outline-none;
+	}
+}

@@ -1,0 +1,185 @@
+.menu-item--title {
+  @apply font-[Inter] font-500 text-[13px];
+}
+
+.menu-item--desc {
+  @apply font-[Inter] font-400 text-[12px] c-[#999999];
+}
+
+.top-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+
+  .top-left {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    span,
+    button {
+      height: 28px;
+      display: flex;
+      align-items: center;
+    }
+
+    :deep(.ant-select-selector) {
+      display: flex;
+      align-items: center;
+      height: 28px;
+      font-size: 12px;
+    }
+
+    :deep(.ant-input) {
+      font-size: 12px;
+    }
+
+    a {
+      cursor: pointer;
+    }
+
+    .sort-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .icon {
+        font-size: 16px;
+      }
+
+      .sort-by {
+        font-size: 12px;
+        margin-left: 6px;
+        color: #838486;
+        display: flex;
+        align-items: center;
+
+        span {
+          color: #000000;
+          margin-left: 4px;
+        }
+      }
+    }
+  }
+
+  .top-right {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    button {
+      height: 38px;
+      font-size: 12px;
+      font-family: Inter;
+    }
+  }
+}
+
+.action-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  button {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    font-family: Inter;
+  }
+}
+
+.ant-btn-link:disabled {
+  opacity: 0.3;
+}
+
+.create-menu {
+  padding: 2px 5px;
+
+  &:hover {
+    background: #EFEFF0;
+    padding: 2px 5px;
+    border-radius: 4px;
+  }
+}
+
+.state--span {
+  min-width: 80px;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 13px;
+  position: relative;
+  padding-left: 15px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+  }
+}
+
+.state--noStart {
+  @extend .state--span;
+  color: #CFCFD9;
+
+  &::before {
+    background: #CFCFD9;
+  }
+}
+
+.state--crawling {
+  @extend .state--span;
+  color: #1B84FF;
+
+  &::before {
+    background: #1B84FF;
+  }
+}
+
+.state--activate {
+  @extend .state--span;
+  color: #05AA21;
+
+  &::before {
+    background: #05AA21;
+  }
+}
+
+.state--inactivate {
+  @extend .state--span;
+  color: #F1416C;
+
+  &::before {
+    background: #F1416C;
+  }
+}
+
+.table-pagination {
+  font-size: 13px;
+  font-family: Inter;
+
+  :deep(li) {
+    height: 28px;
+    line-height: 26px;
+  }
+
+  :deep(.ant-select-selector) {
+    height: 28px;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    font-family: Inter;
+  }
+}
+
+.text-ellipsis-span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

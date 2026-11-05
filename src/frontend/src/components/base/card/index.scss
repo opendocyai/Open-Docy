@@ -1,0 +1,9 @@
+.base-card {
+  @apply px-[30px] flex flex-col min-h-full ;
+  &__header, &__footer {
+    @apply flex-none py-[15px];
+  }
+  &__body{
+    @apply flex-1;
+  }
+}

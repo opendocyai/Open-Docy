@@ -1,0 +1,59 @@
+.base-info-wrap {
+  @apply w-full h-full overflow-hidden flex justify-center;
+
+  .base-info {
+    @apply w-full h-full overflow-hidden bg-[#F9F9F9] rounded-[10px] py-[20px] px-[30px] border-[1px] border-[#F1F1F1] text-[12px];
+
+    .label {
+      @apply font-[Inter] fw-[500];
+      @apply text-[12px] lh-[22px] c-black;
+    }
+
+    .value {
+      @apply font-[Inter] fw-[500];
+      @apply text-[12px] lh-[22px] c-[#999999];
+    }
+
+    .base-info-content {
+      @apply w-full flex flex-col bg-[#F2F2F2] mt-[16px] px-[24px] py-[10px] lh-[20px] rounded-[10px] lh-[30px] font-[Inter];
+      @apply h-[calc(100%-22px)] overflow-y-auto;
+    }
+
+    .info-item {
+      @apply w-full flex-none flex flex-wrap;
+    }
+
+  }
+
+  .my-card-item {
+    @apply h-[189px] mt-[16px];
+
+    :deep(.ant-card-body) {
+      @apply py-0 px-[15px];
+    }
+
+    .my-card-info {
+      @apply w-[353px] h-[189px] font-[Inter] fw-500;
+      @apply text-[14px] lh-[18px] c-black;
+
+      .card-title {
+        .card-icon {
+          @apply w-[33px] h-[33px] mr-[10px];
+        }
+
+        span {
+          @apply flex-1;
+          @apply line-clamp-1;
+        }
+      }
+    }
+  }
+
+}
+
+.base-card {
+  @apply max-h-[70vh] overflow-hidden;
+  :deep(.base-card__body) {
+    @apply overflow-y-auto;
+  }
+}

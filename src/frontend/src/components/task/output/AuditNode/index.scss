@@ -1,0 +1,6 @@
+.base-card {
+  @apply max-h-[70vh] overflow-hidden;
+  :deep(.base-card__body) {
+    @apply overflow-y-auto;
+  }
+}

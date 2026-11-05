@@ -1,0 +1,29 @@
+.chat-robot-btn {
+    @apply fixed bottom-[26px] right-[30px] w-[124px];
+
+
+    bottom: 26px;
+	right: 30px;
+	width: 124px;
+	height: 39px;
+	border-radius: 8px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	padding-bottom: 4px;
+	background: url("@/assets/images/ai_assistant_bg.svg") no-repeat center;
+	z-index: 900;
+
+    img {
+		width: 18px;
+		margin-bottom: 1px;
+	}
+
+	span {
+		font-weight: 400;
+		font-size: 13px;
+		color: #020202;
+	}
+}

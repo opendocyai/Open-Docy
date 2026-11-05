@@ -1,0 +1,6 @@
+.aside-logo {
+  @apply flex items-center gap-x-[10px]  my-[20px] cursor-pointer pl-[18px] h-[37px];
+  .logo-icon {
+    @apply w-[147px] h-[37px];
+  }
+}

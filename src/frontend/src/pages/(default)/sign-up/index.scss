@@ -1,0 +1,189 @@
+.login-btn {
+  --ant-font-size-base: 13px;
+  --ant-border-radius-base: 8px;
+  --ant-button-font-weight: 500;
+  @apply w-full h-[54px] font-[Inter] mt-3;
+}
+
+.login-main-wrap {
+  width: 100%;
+  padding: 56px 110px 10px;
+  border-radius: 0 20px 20px 0;
+  position: absolute;
+  background: #ffffff;
+  height: 100%;
+
+  .login-top {
+    position: absolute;
+    top: 56px;
+    left: 110px;
+    width: auto;
+
+    .back {
+      font-family: Inter;
+      font-weight: 400;
+      font-size: 14px;
+      color: #999999;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      height: 34px;
+      cursor: pointer;
+    }
+  }
+
+  .login-form {
+    width: 391px;
+
+    .login-form-info {
+      color: #000000;
+      text-align: center;
+
+      .login-form-info-title {
+        font-weight: 600;
+        font-size: 28px;
+        font-family: Inter;
+      }
+
+      .login-form-info-desc {
+        font-size: 16px;
+        line-height: 24px;
+        margin: 16px 0 50px;
+        font-family: Inter;
+      }
+    }
+
+    .google {
+      height: 54px;
+      border-radius: 10px;
+      color: #000000;
+      border: 1px solid #EEEFF1;
+      background: #FFFFFF;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      font-family: Inter;
+
+      img {
+        margin-right: 16px;
+      }
+    }
+
+    .or {
+      color: #000000;
+      height: 24px;
+      font-size: 16px;
+      font-weight: 400;
+      margin: 16px 0;
+      text-align: center;
+      font-family: Inter;
+    }
+
+    .ant-form-item {
+      margin-bottom: 22px;
+      font-family: Inter;
+    }
+
+    .ant-input,
+    .ant-input-affix-wrapper {
+      border-radius: 10px;
+      height: 54px;
+      font-family: Inter;
+    }
+
+    .ant-input:focus {
+      box-shadow: none;
+    }
+  }
+
+  .forgot-passwod {
+    text-align: right;
+    color: #999999;
+    line-height: 16px;
+    margin-bottom: 30px;
+    font-family: Inter;
+  }
+
+  .agree {
+    color: #999999;
+    font-size: 14px;
+    text-align: center;
+    font-family: Inter;
+    line-height: 20px;
+
+    a {
+      text-decoration: underline;
+
+      &:hover {
+        color: #2E2BD9;
+      }
+    }
+  }
+}
+
+
+.spline-viewer-wrap {
+  display: none;
+}
+
+.login-main-wrap {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) and (orientation: landscape) {
+  .spline-viewer-wrap {
+    display: block;
+  }
+
+  .login-main-wrap {
+    width: 50%;
+  }
+}
+
+
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+  .login-main-wrap .login-top {
+    top: 30px;
+    left: 50px;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 1366px) and (orientation: landscape) {
+  .login-main-wrap .login-top {
+    top: 30px;
+    left: 50px;
+    width: auto;
+
+    .back {
+      font-size: 14px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .login-main-wrap .login-form .login-form-info .login-form-info-title {
+    margin-top: 30px;
+  }
+
+  .login-main-wrap .login-form .login-form-info .login-form-info-desc {
+    line-height: 24px;
+    margin: 16px 0 30px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .login-main-wrap .login-top {
+    top: 30px;
+    left: 50px;
+    width: auto;
+  }
+
+  .login-main-wrap .login-form .login-form-info .login-form-info-title {
+    font-size: 38px;
+  }
+
+  .login-form {
+    scale: 0.9;
+  }
+}

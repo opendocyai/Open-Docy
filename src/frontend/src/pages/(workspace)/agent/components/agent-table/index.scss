@@ -1,0 +1,32 @@
+.table-page-wrap {
+  padding: 0px 0px;
+  overflow: auto;
+  width: 100%;
+}
+
+a {
+  cursor: pointer;
+}
+
+.action-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  button {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    font-family: Inter;
+  }
+}
+
+.ant-btn-link:disabled {
+  opacity: 0.5;
+}
+
+.text-ellipsis-span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

@@ -1,0 +1,59 @@
+.title {
+  @apply font-[Inter] fw-500 text-[16px];
+}
+
+.description {
+  @apply font-[Inter] fw-400 text-[13px] c-[#ccc] my-[6px] mb-[26px] pl-[10px];
+}
+
+.list-title {
+  @apply font-[Inter] fw-500 text-[13px] c-[#000000];
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%;
+  display: inline-block;
+}
+.ant-input{
+  @apply font-[Inter] fw-400 text-[12px] c-[#999999] bg-[#F3F3F3] border-transparent;
+}
+.list-value {
+  @apply font-[Inter] fw-400 text-[12px] c-[#999999]  block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%;
+  display: inline-block;
+}
+
+.active {
+  @apply bg-[#2E2BD91F];
+  border-radius: 8px;
+}
+
+:deep(.ant-list .ant-list-item .ant-list-item-meta .ant-list-item-meta-title) {
+  height: 14px;
+}
+
+:deep(.select-list-item) {
+  min-height: 48px;
+  margin-bottom: 6px;
+  padding: 12px 14px!important;
+  cursor: pointer;
+}
+
+.sider-title {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 40px;
+  color: #000000;
+}
+
+.title-desc {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 13px;
+  color: #cccccc;
+  margin-bottom: 20px;
+}

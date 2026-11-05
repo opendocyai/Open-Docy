@@ -1,0 +1,81 @@
+diff --git a/dist/index.mjs b/dist/index.mjs
+index e96c451c419d8317bd070d1cc3894c40677d9af9..35199c8f3fdc38badc277b9c72e6bde435f0fc4c 100644
+--- a/dist/index.mjs
++++ b/dist/index.mjs
+@@ -200,6 +200,60 @@ function resolveApplyVariables(options) {
+ 	}
+ 	return toArray(applyVariable || []);
+ }
++// pnpm patch: linear-time empty-rule removal, semantically identical to the
++// quadratic regex it replaces below. That regex is O(n^2) on long brace-free
++// runs (e.g. base64 inlined assets) — a 364KB CSS file took minutes per pass.
++const __emptyRuleSelectorRE = /^[\s\w\-.,#:[\]=*"'>~+^$|()\\]+$/;
++const __wsRE = /\s/;
++function stripEmptyRules(code) {
++	const n = code.length;
++	let out = "";
++	let copied = 0;
++	let segStart = 0;
++	let i = 0;
++	while (i < n) {
++		const ch = code.charCodeAt(i);
++		if (ch !== 123 /* { */) {
++			if (ch === 125 /* } */) segStart = i + 1;
++			i++;
++			continue;
++		}
++		let j = i + 1;
++		while (j < n && __wsRE.test(code[j])) j++;
++		if (j < n && code.charCodeAt(j) === 125 /* } */) {
++			const selector = code.slice(segStart, i);
++			if (selector.length > 0 && __emptyRuleSelectorRE.test(selector.trim())) {
++				// regex matched and the selector is legal: drop selector + {} + trailing whitespace
++				out += code.slice(copied, segStart);
++				j++;
++				while (j < n && __wsRE.test(code[j])) j++;
++				copied = j;
++				segStart = j;
++				i = j;
++				continue;
++			}
++			if (selector.length > 0) {
++				// regex matched but the selector is illegal: keep everything (including trailing \s*),
++				// the next match starts after the trailing whitespace
++				j++;
++				while (j < n && __wsRE.test(code[j])) j++;
++				segStart = j;
++				i = j;
++				continue;
++			}
++			// empty selector (e.g. `}{}` or a leading `{}`): the regex cannot match here,
++			// nothing is consumed, so trailing whitespace still counts toward the next selector
++			segStart = j + 1;
++			i = j + 1;
++			continue;
++		}
++		segStart = i + 1;
++		i++;
++	}
++	if (copied === 0) return code;
++	out += code.slice(copied);
++	return out;
++}
+ async function transformDirectives(code, uno, options, filename, originalCode, offset) {
+ 	const applyVariable = resolveApplyVariables(options);
+ 	const isHasApply = (code) => code.includes("@apply") || applyVariable.some((s) => code.includes(s));
+@@ -234,10 +288,11 @@ async function transformDirectives(code, uno, options, filename, originalCode, o
+ 	await Promise.all(stack);
+ 	const oldCode = code.toString();
+ 	if (!isHasApply(oldCode)) {
+-		const newCode = oldCode.replace(/([^{}]+)\{\s*\}\s*/g, (m, selector) => {
+-			if (/^[\s\w\-.,#:[\]=*"'>~+^$|()\\]+$/.test(selector.trim())) return "";
+-			return m;
+-		});
++		// pnpm patch: the original implementation was
++		//   oldCode.replace(/([^{}]+)\{\s*\}\s*/g, (m, selector) => ...)
++		// That regex is O(n^2) on long brace-free runs; base64 inlined assets made a
++		// single call take minutes. Replaced with an equivalent linear scan (see stripEmptyRules).
++		const newCode = stripEmptyRules(oldCode);
+ 		if (newCode !== oldCode) code.update(0, code.original.length, newCode);
+ 	}
+ }

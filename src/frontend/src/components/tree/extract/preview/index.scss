@@ -1,0 +1,21 @@
+.tree-extract-preview {
+  @apply py-[15px];
+}
+.list__title {
+  @apply min-h-[40px] flex items-center bg-[#F8F8F8] font-[Inter-Medium,Inter] fw-500 c-[#000] text-[13px] px-[15px] gap-2;
+  @apply cursor-pointer;
+}
+.els__children {
+  .list__title {
+    @apply bg-transparent pl-[25px] font-[Inter] fw-400;
+  }
+}
+
+.el__children {
+  .list__title {
+    @apply bg-transparent cursor-pointer rounded-[8px] pl-[40px];
+  }
+  .active {
+    @apply bg-[#2E2BD912] c-[#2E2BD9];
+  }
+}

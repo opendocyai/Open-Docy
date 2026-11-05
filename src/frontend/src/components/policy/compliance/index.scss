@@ -1,0 +1,19 @@
+.sort-box {
+  @apply flex items-center justify-center;
+  .icon {
+    @apply text-[16px];
+  }
+
+  .sort-by {
+    @apply text-[12px] ml-[6px] c-[#838486] flex items-center;
+    span {
+      @apply c-[#000000] ml-[4px];
+    }
+  }
+}
+:deep(.ant-table) {
+  @apply font-[Inter] text-[13px] mb-[30px];
+  .ant-table-cell{
+    @apply font-[Inter];
+  }
+}

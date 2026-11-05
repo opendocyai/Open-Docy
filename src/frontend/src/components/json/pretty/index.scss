@@ -1,0 +1,26 @@
+.json-viewer {
+  margin: 0;
+  padding: 6px;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-family: Inter;
+  font-size: 12px;
+  line-height: 1.7;
+
+  :deep(.json-key) {
+    color: #f63c47;
+  }
+
+  :deep(.json-string) {
+    color: #5194fd;
+  }
+
+  :deep(.json-number) {
+    color: #4d8dff;
+  }
+
+  :deep(.json-boolean) {
+    color: #a855f7;
+  }
+}

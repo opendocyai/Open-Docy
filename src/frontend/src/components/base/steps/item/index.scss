@@ -1,0 +1,27 @@
+.base-steps-item {
+  @apply relative flex;
+  &__line {
+    @apply absolute top-[8px] start-0 w-[1px] h-full;
+    &::after {
+      @apply content-[''] ms-[8.5px] inline-block w-[1px] h-full bg-[#EEEFF1] rounded-[1px];
+    }
+  }
+  &__icon {
+    @apply flex-none w-[18px] h-[18px] me-[10px];
+    .base-steps-icon {
+      @apply relative inline-block w-[18px] h-[18px] rounded-full bg-[#99999914];
+    }
+    .base-steps-icon-dot {
+      @apply absolute w-[8px] h-[8px] rounded-full bg-[#999999] inset-[5px] inline-block;
+    }
+  }
+  &__content{
+    @apply flex-1 flex flex-col gap-[10px];
+  }
+  &__title {
+    @apply font-[Inter] fw-500 c-[#000] text-[16px];
+  }
+  &__description{
+    @apply font-[Inter] fw-400 mb-[15px];
+  }
+}

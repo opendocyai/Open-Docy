@@ -1,0 +1,21 @@
+<svg width="138" height="57" viewBox="0 0 138 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#paint0_angular_9595_197_clip_path)" data-figma-skip-parse="true"><g transform="matrix(0.0327222 0.01625 -0.0516667 0.0102917 69 25.5)"><foreignObject x="-1451.56" y="-1451.56" width="2903.12" height="2903.12"><div xmlns="http://www.w3.org/1999/xhtml" style="background:conic-gradient(from 90deg,rgba(255, 201, 251, 1) 0deg,rgba(255, 237, 193, 1) 124.615deg,rgba(214, 186, 255, 1) 211.154deg,rgba(190, 232, 255, 1) 268.269deg,rgba(190, 232, 255, 1) 318.462deg,rgba(255, 201, 251, 1) 360deg);height:100%;width:100%;opacity:1"></div></foreignObject></g></g><rect x="7" y="6" width="124" height="39" rx="8" data-figma-gradient-fill="{&#34;type&#34;:&#34;GRADIENT_ANGULAR&#34;,&#34;stops&#34;:[{&#34;color&#34;:{&#34;r&#34;:1.0,&#34;g&#34;:0.78846156597137451,&#34;b&#34;:0.98433047533035278,&#34;a&#34;:1.0},&#34;position&#34;:0.0},{&#34;color&#34;:{&#34;r&#34;:1.0,&#34;g&#34;:0.93152117729187012,&#34;b&#34;:0.75721156597137451,&#34;a&#34;:1.0},&#34;position&#34;:0.34615385532379150},{&#34;color&#34;:{&#34;r&#34;:0.84294873476028442,&#34;g&#34;:0.73076921701431274,&#34;b&#34;:1.0,&#34;a&#34;:1.0},&#34;position&#34;:0.58653843402862549},{&#34;color&#34;:{&#34;r&#34;:0.74509805440902710,&#34;g&#34;:0.90980392694473267,&#34;b&#34;:1.0,&#34;a&#34;:1.0},&#34;position&#34;:0.74519228935241699},{&#34;color&#34;:{&#34;r&#34;:0.74519228935241699,&#34;g&#34;:0.91081732511520386,&#34;b&#34;:1.0,&#34;a&#34;:1.0},&#34;position&#34;:0.88461536169052124}],&#34;stopsVar&#34;:[{&#34;color&#34;:{&#34;r&#34;:1.0,&#34;g&#34;:0.78846156597137451,&#34;b&#34;:0.98433047533035278,&#34;a&#34;:1.0},&#34;position&#34;:0.0},{&#34;color&#34;:{&#34;r&#34;:1.0,&#34;g&#34;:0.93152117729187012,&#34;b&#34;:0.75721156597137451,&#34;a&#34;:1.0},&#34;position&#34;:0.34615385532379150},{&#34;color&#34;:{&#34;r&#34;:0.84294873476028442,&#34;g&#34;:0.73076921701431274,&#34;b&#34;:1.0,&#34;a&#34;:1.0},&#34;position&#34;:0.58653843402862549},{&#34;color&#34;:{&#34;r&#34;:0.74509805440902710,&#34;g&#34;:0.90980392694473267,&#34;b&#34;:1.0,&#34;a&#34;:1.0},&#34;position&#34;:0.74519228935241699},{&#34;color&#34;:{&#34;r&#34;:0.74519228935241699,&#34;g&#34;:0.91081732511520386,&#34;b&#34;:1.0,&#34;a&#34;:1.0},&#34;position&#34;:0.88461536169052124}],&#34;transform&#34;:{&#34;m00&#34;:65.444442749023438,&#34;m01&#34;:-103.33333587646484,&#34;m02&#34;:87.944442749023438,&#34;m10&#34;:32.50,&#34;m11&#34;:20.583332061767578,&#34;m12&#34;:-1.0416663885116577},&#34;opacity&#34;:1.0,&#34;blendMode&#34;:&#34;NORMAL&#34;,&#34;visible&#34;:true}"/>
+<g opacity="0.56" filter="url(#filter0_f_9595_197)">
+<rect x="16" y="16" width="106" height="25" fill="white"/>
+</g>
+<g opacity="0.74" filter="url(#filter1_f_9595_197)">
+<circle cx="30.5807" cy="25.4167" r="9.58333" transform="rotate(-180 30.5807 25.4167)" fill="white"/>
+</g>
+<defs>
+<clipPath id="paint0_angular_9595_197_clip_path"><rect x="7" y="6" width="124" height="39" rx="8"/></clipPath><filter id="filter0_f_9595_197" x="0" y="0" width="138" height="57" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="8" result="effect1_foregroundBlur_9595_197"/>
+</filter>
+<filter id="filter1_f_9595_197" x="14.4971" y="9.33301" width="32.167" height="32.167" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="3.25" result="effect1_foregroundBlur_9595_197"/>
+</filter>
+</defs>
+</svg>

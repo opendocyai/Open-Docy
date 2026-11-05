@@ -1,0 +1,39 @@
+.style-editor {
+  position: fixed;
+  top: 100px;
+  left: 16px;
+  width: 260px;
+  z-index: 9999;
+  background-color: #fff;
+  font-family: Inter;
+
+}
+.sider-title {
+  font-family: Inter;
+  font-size: 14px;
+  color: #000000;
+}
+.style-title {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 13px;
+  margin: 30px 0 20px;
+  color: #000000;
+}
+.styleForm :deep(.ant-form-item .ant-form-item-label > label) {
+  color: #4b525b;
+  font-family: Inter;
+}
+.number-input {
+  width: 100%;
+}
+.color-input {
+  width: 35px;
+  height: 35px;
+  padding: 4px 5px;
+  border-radius: 6px;
+  background: #f5f5f5;
+}
+.color-form-itom {
+  text-align: right;
+}

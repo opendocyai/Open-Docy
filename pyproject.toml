@@ -1,0 +1,198 @@
+[project]
+name = "open_docy"
+version = "0.0.1"
+description = "Open-source document automation and AI agent workflow server (FastAPI + Typer CLI)"
+readme = "README.md"
+requires-python = ">=3.11,<3.14"
+license = "MIT"
+keywords = ["ai", "agent", "document-processing", "document-automation", "workflow", "fastapi"]
+authors = [
+    { name = "Docy" }
+]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Framework :: FastAPI",
+    "Operating System :: OS Independent",
+    "Topic :: Office/Business",
+]
+
+dependencies = [
+    "fastapi>=0.115.2,<1.0.0",
+    "httpx[http2]>=0.27,<1.0.0",
+    "aiofile>=3.9.0,<4.0.0",
+    "uvicorn>=0.30.0,<1.0.0",
+    "loguru>=0.7.1,<1.0.0",
+    "rich>=14.3.3,<15.0.0",
+    "sqlmodel==0.0.22",
+    "pydantic[email]>=2.12.5,<3.0.0",
+    "pydantic-settings>=2.10.0,<3.0.0",
+    "typer>=0.13.0,<1.0.0",
+    "alembic>=1.13.0,<2.0.0",
+    "pandas==3.0.2",
+    "multiprocess>=0.70.14,<1.0.0",
+    "orjson>=3.10.15",
+    "pyjwt>=2.10.0,<3.0.0",
+    "multiprocess>=0.70.14,<1.0.0",
+    "chardet>=5.2.0,<6.0.0",
+    "platformdirs>=4.2.0,<5.0.0",
+    "fastapi-pagination>=0.13.1,<1.0.0",
+    "jinja2>=3.1.6",
+    "honker>=0.4.0",
+    "aiosqlite>=0.22.1",
+    "sonyflake>=2.0.3",
+    #"pip>=26.2",
+    "sse-starlette>=3.4.6",
+    "cashews[diskcache]>=7.5.0",
+    "pycryptodome>=3.23.0",
+    "msgpack>=1.2.1",
+    "marshmallow>=4.3.0",
+    "marshmallow-sqlalchemy>=1.5.0",
+    "boto3>=1.43.65",
+    "genro-storage>=0.8.0",
+    "sqlalchemy-crud-plus>=1.13.3",
+    "python-multipart>=0.0.32",
+    "msgspec>=0.21.1",
+    "requests>=2.34.2",
+    "pytz>=2026.3.post1",
+    "python-dateutil>=2.9.0.post0",
+    "aiohttp>=3.14.3",
+    # --- AI dependencies (merged from src/backend/docy/ai/requirements.txt;
+    # sonyflake-py replaced by sonyflake; conflicting pins resolved in favor of
+    # the backend constraints above) ---
+    "annotated-types==0.7.0",
+    "anyio==4.14.2",
+    "brotli==1.2.1",
+    "cachecontrol==0.14.4",
+    "certifi==2026.10.19",
+    "cffi==2.0.0",
+    "charset-normalizer==3.4.6",
+    "colorama==0.4.6",
+    "cryptography>=50.0.0",
+    "decorator==5.2.1",
+    "defusedxml==0.7.1",
+    "distro==1.9.0",
+    "docx2pdf==0.1.8",
+    "et_xmlfile==2.0.0",
+    "eval_type_backport==0.3.1",
+    "filelock==4.2.1",
+    "geographiclib==2.1",
+    "geopy==2.5.0",
+    "googlemaps==4.10.0",
+    "h11==0.16.0",
+    "html5lib==1.1",
+    "httpcore==1.0.9",
+    "idna==3.16",
+    "jiter==0.13.0",
+    "jmespath==1.1.0",
+    "jsonpatch==1.33",
+    "jsonpointer==3.1.1",
+    "langchain==1.3.9",
+    "langchain-core>=1.3.2,<2.0.0",
+    "langchain-openai>=1.2.1,<2.0.0",
+    "langchain-mistralai>=1.1.4,<2.0.0",
+    "langchain-text-splitters==1.1.2",
+    "langchain-community>=0.4.1",
+    "langchain-tavily==0.2.18",
+    "langchain-openrouter>=0.2.0,<1.0.0",
+    "langgraph>=1.2.4,<1.3.0",
+    "langgraph-checkpoint>=4.3.1",
+    "langgraph-prebuilt>=1.1.0,<2.0.0",
+    "langgraph-sdk>=0.4.4,<1.0.0",
+    "langsmith==0.8.18",
+    "lxml==6.1.0",
+    "markdown-it-py==4.0.0",
+    "markupsafe==3.0.3",
+    "mdurl==0.1.2",
+    "mistralai==1.9.3",
+    "numpy==2.4.4",
+    "openai==2.26.0",
+    "opencv-python-headless==4.11.0.86",
+    "openpyxl==3.1.5",
+    "ormsgpack==1.12.2",
+    "packaging==26.0",
+    "pdfminer.six==20251230",
+    "pdfplumber==0.11.9",
+    "pika==1.3.2",
+    "pillow==13.0.0",
+    #"pip-api==0.0.34",
+    #"pip-requirements-parser==32.0.1",
+    #"pip_audit==2.10.0",
+    "prompt_toolkit==3.0.52",
+    "py-serializable==2.1.0",
+    "pyarrow==24.0.0",
+    "pycparser==3.0",
+    "pygments==2.20.0",
+    "pikepdf==10.17.0",
+    "pyparsing==3.3.2",
+    "pypdfium2==5.6.0",
+    "python-docx==1.2.0",
+    "python-dotenv==1.2.2",
+    "python-pptx==1.0.2",
+    "pyyaml==6.0.2",
+    "regex==2026.3.32",
+    "reportlab==4.4.10",
+    "requests-toolbelt==1.0.0",
+    "setuptools==84.1.0",
+    "six==1.17.0",
+    "sniffio==1.3.1",
+    "sortedcontainers==2.4.0",
+    "stack-data==0.6.3",
+    "tavily-python==0.7.9",
+    "tenacity==9.1.4",
+    "tiktoken==0.9.0",
+    "tomli==2.4.1",
+    "tomli_w==1.2.0",
+    "tqdm==4.67.3",
+    "traitlets==5.14.3",
+    "typing-inspection==0.4.2",
+    "typing_extensions==4.15.0",
+    "tzdata==2025.3",
+    "urllib3==2.8.0",
+    "uuid_utils==0.14.1",
+    "wcwidth==0.6.0",
+    "webencodings==0.5.1",
+    "xlrd==2.0.2",
+    "xlsxwriter==3.2.9",
+    "xxhash==3.6.0",
+    "zstandard==0.25.0",
+    "camelot-py>=2.0.0",
+    "pikepdf==10.17.0",
+    "pypdf>=6.21.4",
+    "langgraph-checkpoint-sqlite>=3.1.2,<4.0.0",
+    "pyarmor>=9.2.7",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.24",
+    "ruff>=0.6",
+]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/backend/docy"]
+license-files = ["LICENSE.md", "THIRD_PARTY_NOTICES.md"]
+
+# The built frontend (src/frontend/dist-web) is shipped inside the wheel so
+# that installed users get the UI without Node. Build it first: `docy build-web`.
+# The hook adds the include conditionally: a fresh checkout without dist-web
+# must still build, otherwise `uv sync` would fail before the first build.
+[tool.hatch.build.hooks.custom]
+path = "build_hooks.py"
+
+[project.scripts]
+docy = "docy.__main__:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

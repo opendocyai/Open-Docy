@@ -1,0 +1,59 @@
+.base-header {
+  @apply w-full h-full flex justify-between items-center px-[20px];
+  &--title{
+    @apply text-[18px] font-[Inter] fw-600;
+  }
+}
+.trigger {
+  @apply cursor-pointer transition-color duration-300 ease-in-out;
+  &:hover {
+    @apply c-[#2E2BD9];
+  }
+}
+.ant-breadcrumb {
+  @apply c-[#19191A] font-[Inter] fw-500 text-[14px];
+}
+
+.ant-dropdown-link {
+  @apply flex justify-start items-center gap-x-[10px] cursor-pointer;
+}
+.ant-overlay {
+  @apply bg-[#FFFFFF] w-[265px] rounded-6px px-[10px] py-[10px];
+  @apply shadow-[0px_0px_10px_0px_rgba(0,0,0,0.1)];
+}
+.ant-list {
+  .ant-list-item {
+    @apply bg-transparent shadow-none px-[10px] border-be-none c-[#CCCCCC];
+    @apply justify-start items-center gap-x-[10px] cursor-pointer py-[8px];
+    &:hover {
+        @apply bg-[#f5f5f5] rounded-[4px];
+      }
+    .text{
+     @apply text-[12px] font-[Inter] fw-400 c-[#555555];
+    }
+  }
+}
+:deep(.nuxt-icon svg) {
+  @apply mb-0;
+}
+
+.email-workflow {
+  @apply h-[32px] px-[12px] bg-[linear-gradient(90.89deg,#FFC9FB_-2.96%,#D7BAFF_18.42%,#BEE8FF_122%)];
+  @apply font-[Inter] fw-400 text-[12px] c-[#212121] cursor-pointer;
+  @apply lh-[22px] rounded-[4px] align-middle;
+  &:hover {
+    @apply opacity-80;
+  }
+}
+
+.personal-item {
+ .item-icon-wrap {
+  @apply flex items-center gap-[10px];
+   .item-icon {
+     @apply text-[20px]  c-[#cccccc]!;
+   }
+   span {
+    @apply h-[20px] lh-[20px];
+   }
+ }
+}

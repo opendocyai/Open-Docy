@@ -1,0 +1,13 @@
+import { Plugin } from 'vue';
+import { CodyAIOptionsType } from './core';
+export * from './components';
+export * from './client';
+export * from './composables';
+export * from './utils';
+export * from './api';
+export * from './stores';
+export * from './shared';
+export * from './core';
+export * from './router';
+declare const plugin: Plugin<CodyAIOptionsType, any>;
+export default plugin;

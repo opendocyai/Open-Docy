@@ -1,0 +1,39 @@
+.action-result {
+  @apply flex items-center justify-between mb-4;
+  &__action {
+    @apply flex items-center gap-3;
+    &--icon {
+      @apply text-[33px];
+      @apply flex items-center justify-center;
+      .icon {
+        :deep(svg) {
+          @apply mb-0;
+        }
+      }
+    }
+    &--name {
+      @apply font-[Inter-Medium,Inter] fw-500 text-[14px];
+    }
+  }
+}
+
+.detail-list {
+  @apply flex flex-col gap-4 mb-4;
+}
+
+.detail-row {
+  @apply flex gap-4;
+  &__icon {
+    @apply flex-none w-[33px] h-[33px] rounded-[8px] bg-[#F5F7FB];
+    @apply flex items-center justify-center text-[16px];
+    :deep(svg) {
+      @apply mb-0;
+    }
+  }
+  &__value {
+    @apply c-[#6C6C6C] font-[Inter-Medium,Inter] fw-500 text-[12px] flex items-center gap-2;
+  }
+}
+.ant-tag{
+  @apply font-[Inter];
+}

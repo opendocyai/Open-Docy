@@ -1,0 +1,11 @@
+.ant-tabs {
+  :deep(.ant-tabs-nav-wrap) {
+    @apply px-[30px];
+  }
+}
+:deep(.ant-table) {
+  @apply font-[Inter] text-[13px] mb-[30px];
+  .ant-table-cell{
+    @apply font-[Inter] text-[13px];
+  }
+}

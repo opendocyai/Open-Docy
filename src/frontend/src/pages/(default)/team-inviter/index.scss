@@ -1,0 +1,108 @@
+.logo {
+  @apply w-full mb-5 relative lg:(absolute top-[15px] left-[15px] w-auto mb-0);
+
+  img {
+    @apply w-[150px] h-auto aspect-[750/419] cursor-pointer;
+  }
+}
+
+.forget-password {
+  background-color: #F8F8FF;
+}
+
+.login__form {
+  color: #000000;
+  text-align: center;
+  width: 875px;
+  min-height: 500px;
+  background: #ffffff;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .ant-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ant-form-item {
+    width: 391px;
+    @apply font-[Inter] fw-400;
+  }
+
+  .ant-input {
+    height: 54px;
+    @apply font-[Inter] fw-400;
+  }
+
+  .ant-input:focus {
+    box-shadow: none;
+  }
+
+  &--info {
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &--title {
+      @apply font-[Inter] fw-400 text-[16px];
+      text-align: center;
+    }
+
+    &--desc {
+      @apply font-[Inter] fw-500 text-[20px];
+      text-align: center;
+      line-height: 18px;
+      margin: 10px 0;
+    }
+  }
+
+}
+
+.ant-form-item-label {
+  color: #000000 !important;
+}
+
+.btn-wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.login-btn {
+  width: 203px;
+  height: 38px;
+  border-radius: 5px;
+  font-size: 13px;
+}
+.accept-btn {
+  background-color: #17C653;
+  margin-bottom: 10px;
+  font-family: Inter;
+  &:hover {
+    background-color: #17C653;
+    opacity: 0.8;
+  }
+}
+
+.ignore-btn {
+  color: #999999;
+  font-family: Inter;
+}
+
+.top-logo {
+  margin: 0px 0 50px;
+  top: 0px;
+  left: 130px;
+
+  img {
+    margin-top: 0px;
+  }
+}

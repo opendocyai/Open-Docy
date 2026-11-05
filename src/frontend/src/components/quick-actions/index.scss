@@ -1,0 +1,11 @@
+:deep(.nuxt-icon svg) {
+  @apply w-full h-auto;
+}
+
+.active {
+  @apply bg-[#F1F1F1];
+  @apply rounded-[40px] border-b-transparent;
+}
+.ant-list-item:has(+ .active) {
+  @apply border-b-transparent;
+}

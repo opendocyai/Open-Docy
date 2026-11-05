@@ -1,0 +1,101 @@
+.back {
+  @apply p-3;
+}
+
+.el-button.is-link {
+  @apply font-[inter] fw-500 text-16px c-[#010101];
+}
+
+.details {
+  @apply pb-15px w-100%;
+
+  &--desc {
+    @apply font-[inter] text-12px c-[#847E7B] whitespace-pre-line;
+
+    p {
+      @apply mb-20px whitespace-pre-line;
+    }
+  }
+
+  &--alert {
+    @apply w-full;
+
+    p {
+      @apply font-[inter] fw-400 text-14px border-1px border-solid py-8px px-15px rounded-5px;
+      @apply flex items-center gap-5px;
+      @apply mb-20px whitespace-pre-line;
+
+      span {
+        @apply flex-none fw-600 c-#010101 whitespace-pre-line;
+      }
+    }
+
+    .error {
+      @apply c-#F63C47 border-#F63C47 bg-#F63C471F;
+    }
+
+    .success {
+      @apply c-#010101 border-#17C65324 bg-#17C65324 c-#666666;
+    }
+  }
+
+  &--title {
+    @apply font-[inter] fw-600 text-14px c-[#010101] min-h-36px;
+    @apply flex items-center justify-between mb-15px;
+
+    .el-button {
+      @apply font-[inter] fw-400 text-12px c-white bg-#F27326 border-[#F27326];
+
+      .el-icon {
+        @apply text-16px mr-5px;
+      }
+    }
+  }
+}
+
+.details--list {
+  .el-button {
+    @apply font-[Inter] fw-400 text-12px;
+  }
+}
+
+.card-wrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.masonry-container {
+  column-count: 3;
+  column-gap: 24px;
+  padding: 16px;
+}
+
+.card {
+  background: #fff;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 24px;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  break-inside: avoid;
+}
+
+.card.error {
+  background-color: #fff1f0;
+  border-left: 4px solid #ff4d4f;
+}
+
+@media (max-width: 1400px) {
+  .masonry-container {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .masonry-container {
+    column-count: 1;
+  }
+}

@@ -1,0 +1,33 @@
+import { addTextWatermarkToImageFileOptions } from '../types';
+declare class UtilsClass {
+    readonly supportsIteratorHelpers: boolean;
+    constructor();
+    private hasMethods;
+    private getSupportsIteratorHelpers;
+    useCapitalizeWords: (str: string) => string;
+    fallbackUUID: () => string;
+    getUUID: () => string;
+    getNanoID: (size?: number) => string;
+    useShortUUID: (length?: number, chunkSize?: number) => string;
+    formatNumber: (num: any) => string;
+    getMimeType: (src: string | File) => string;
+    buildURL: (base: string, path: string) => string;
+    formatString: (str: string, mode?: string, toLowerCase?: boolean) => string;
+    addTextWatermarkToImageFile: (file: File, watermarkText: string, options?: addTextWatermarkToImageFileOptions) => Promise<File>;
+    loadImageFromFile: (file: File) => Promise<HTMLImageElement>;
+    getLocation: () => Promise<GeolocationPosition>;
+}
+export declare const utils: UtilsClass;
+export declare const useCapitalizeWords: (str: string) => string;
+export declare const fallbackUUID: () => string;
+export declare const getUUID: () => string;
+export declare const getNanoID: (size?: number) => string;
+export declare const useShortUUID: (length?: number, chunkSize?: number) => string;
+export declare const formatNumber: (num: any) => string;
+export declare const getMimeType: (src: string | File) => string;
+export declare const buildURL: (base: string, path: string) => string;
+export declare const formatString: (str: string, mode?: string, toLowerCase?: boolean) => string;
+export declare const addTextWatermarkToImageFile: (file: File, watermarkText: string, options?: addTextWatermarkToImageFileOptions) => Promise<File>;
+export declare const loadImageFromFile: (file: File) => Promise<HTMLImageElement>;
+export declare const getLocation: () => Promise<GeolocationPosition>;
+export default utils;

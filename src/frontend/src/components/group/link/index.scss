@@ -1,0 +1,29 @@
+.double-line {
+  @apply absolute top-[16.5px] left-[35px];
+  &::before {
+    @apply content-[''] absolute w-full h-[1px] border-t-1 border-dashed border-#D9D9D9 left-[-25px] top-[10px];
+  }
+}
+.group-list-items {
+  @apply relative;
+  &::before {
+    @apply content-[''] absolute w-[1px] h-[calc(100%-27.5px)] border-l-1 border-dashed border-[#D9D9D9] left-[10px] top-0;
+  }
+}
+
+.group-list-items--item {
+  @apply relative py-[10px] pl-[65px];
+
+  .group-list-items--item--add {
+    @apply font-[Inter] fw-400 text-[12px];
+    .ant-btn {
+      @apply c-[#2E2BD9] h-[35px] flex items-center px-0;
+    }
+  }
+
+  .ant-select {
+    :deep(.ant-select-selector) {
+      @apply h-[35px] bg-[#F6F6F6] border-[#F6F6F6];
+    }
+  }
+}

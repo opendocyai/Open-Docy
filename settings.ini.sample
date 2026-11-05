@@ -1,0 +1,60 @@
+# Copy this file to settings.ini and replace the placeholder secrets
+# with your own values. See docs/configuration.md for details.
+
+[DEFAULT]
+log_dir =
+tmp_dir = temp
+;secret: AES key, 16 chars recommended (16/24/32 accepted; checked at startup)
+;sample as: xvxfRUhj28C8UMj9
+secret = change-me
+timezone = UTC
+agent_lock_ttl = 10
+;Webhook endpoint policy: https-only by default; set true to allow http targets.
+webhook_allow_http = false
+;Comma-separated exact hostnames allowed to target private/internal addresses
+;and to use http (empty = disabled).
+webhook_allowed_hosts =
+
+[Security]
+;api_key 32 char sample as: pQ4mZ8vT2sK6nR1wY7cF3jB9xL5dH0gA
+api_key = change-me
+;secret_key 32 char sample as: tN6kX2rP9wC4vB8mQ1sF7jH3yL5dG0aZ
+secret_key = change-me
+;password_level: low | medium | high (default: medium)
+password_level = medium
+;Note: the validator's hard floor is 8; the OSE default is 12.
+password_min_length = 12
+password_max_length = 128
+;jwt_secret_key 64 char sample as 7c4e9a2f5b8d1e6c3a0f7b2d9e4c8a1f6b3d0e7c2a5f9b4d8e1c6a3f0b7d2e5c
+jwt_secret_key = change-me
+algorithm = HS256
+access_token_expire_minutes = 1500
+refresh_token_expire_minutes = 1440
+verification_code_expire_minutes = 30
+oauth_access_token_expire_minutes = 1440
+oauth_refresh_token_expire_minutes = 43200
+
+[S3]
+;Bundled local storage (default) — zero external services.
+;To use MinIO or S3 instead, set driver_type to "minio" or "s3" and fill
+;in the endpoint and credentials (never use the minioadmin defaults):
+;driver_type = minio
+;endpoint_url = http://127.0.0.1:9000
+;aws_access_key_id = change-me
+;aws_secret_access_key = change-me
+driver_type = local
+endpoint_url =
+aws_access_key_id =
+aws_secret_access_key =
+aws_default_region = us-east-1
+bucket = docy
+
+[Server]
+;Binds loopback by default; pass --host 0.0.0.0 to serve other machines.
+http_server_host = 127.0.0.1
+http_server_port = 3000
+public_base_url = http://127.0.0.1:3000
+;Cross-origin frontend deployments: add allowed browser origins
+;(comma-separated). Default allows only http://127.0.0.1:<port> and
+;http://localhost:<port>. Example: cors_origins = http://192.168.1.100:5173
+cors_origins =

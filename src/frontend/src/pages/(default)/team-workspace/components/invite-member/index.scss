@@ -1,0 +1,150 @@
+.ant-input,
+.ant-input-affix-wrapper {
+  border-radius: 10px;
+  height: 54px;
+}
+
+.ant-btn-primary:disabled {
+  color: #ffffff;
+  background-color: #2e2bd9 !important;
+  box-shadow: none;
+  opacity: 0.5;
+}
+
+.section {
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+.section-title {
+  font-weight: 500;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  color: #000000;
+  img {
+    margin-right: 10px;
+    margin-bottom: 2px;
+  }
+}
+
+.copy-link {
+  color: #2e2bd9;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: Inter;
+}
+
+.link-box {
+  background: #2e2bd90a;
+  border: 1px solid #2e2bd9;
+  border-radius: 8px;
+  padding: 12px;
+  color: #bababa;
+}
+
+.link-desc {
+  display: block;
+  margin-top: 8px;
+  font-size: 13px;
+  color: #999;
+}
+
+.account-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.select-wrap {
+  width: 100%;
+
+  .invite-select {
+    width: 100%;
+    overflow: auto;
+  }
+}
+
+.invite-btn {
+  width: 91px;
+  border-radius: 5px;
+  font-family: Inter;
+}
+
+.ant-btn-primary:disabled {
+  opacity: 1;
+  background-color: #d9d9d9 !important;
+}
+
+.email-input-wrapper {
+  border-radius: 4px;
+  min-height: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  background-color: #f9f9f9;
+}
+
+.email-input {
+  min-width: 100px;
+  border: none;
+  box-shadow: none;
+  height: 40px;
+  background-color: #f9f9f9;
+}
+
+.tag-span {
+  max-width: 150px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: inline-block;
+  font-size: 13px;
+}
+
+:deep(.ant-select-selector) {
+  color: #2e2bd9 !important;
+  border: none !important;
+  background-color: unset !important;
+  box-shadow: none !important;
+  height: 70px !important;
+  margin-top: 50px !important;
+}
+
+:deep(.ant-select-arrow) {
+  color: #2e2bd9 !important;
+}
+:deep(.ant-select-dropdown) {
+  margin-top: 50px !important;
+}
+.display-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  height: 66px;
+  border: 1px solid #f0f0f0;
+  border-radius: 8px;
+  padding: 0 16px;
+}
+.select-role {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.role-name {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  @apply flex-1 overflow-hidden;
+}
+.system {
+  @apply bg-#2E2BD924 c-#2E2BD9 text-10px rounded-3px py-3px px-6px w-86px mx-10px;
+}

@@ -1,0 +1,36 @@
+.btn-wrap {
+  width: max-content;
+  height: 52px;
+  background: #f8f8f8;
+  border: 1px solid #eeeff1;
+  border-radius: 38px;
+  display: flex;
+  align-items: center;
+  padding: 0 2px;
+}
+.tab-btn {
+  height: 48px;
+  border-radius: 30px;
+  border: unset;
+  box-shadow: none;
+  width: 136px;
+  display: flex;
+  justify-content: center;
+  background: #f8f8f8;
+  font-size: 16px;
+  font-weight: 500;
+}
+.btn-active {
+  background: #2e2bd9;
+  color: #ffffff;
+  &:hover {
+    color: #ffffff;
+  }
+}
+.content-wrap {
+  width: 100%;
+}
+.task-name {
+  font-size: 24px;
+  font-weight: 600;
+}

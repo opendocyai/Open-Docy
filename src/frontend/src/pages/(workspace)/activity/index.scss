@@ -1,0 +1,232 @@
+.menu-item--title {
+  @apply font-[Inter] font-500 text-[13px];
+}
+
+.menu-item--desc {
+  @apply font-[Inter] font-400 text-[12px] c-[#999999];
+}
+
+.top-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+
+  .top-left {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    span,
+    button {
+      height: 28px;
+      display: flex;
+      align-items: center;
+    }
+
+    .status-select :deep(.ant-select-selector) {
+      display: flex;
+      align-items: center;
+      height: 28px;
+      font-size: 12px!important;
+    }
+
+    :deep(.ant-input) {
+      font-size: 12px;
+      background-color: transparent;
+    }
+
+    a {
+      cursor: pointer;
+    }
+
+    .sort-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .icon {
+        font-size: 16px;
+      }
+
+      .sort-by {
+        font-size: 12px;
+        margin-left: 6px;
+        color: #838486;
+        display: flex;
+        align-items: center;
+        line-height: 28px;
+        span {
+          color: #000000;
+          margin-left: 4px;
+        }
+      }
+    }
+  }
+
+  .top-right {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    button {
+      height: 38px;
+      font-size: 12px;
+      font-family: Inter;
+    }
+  }
+}
+
+.view-btn {
+  color: rgb(102, 118, 255);
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  font-family: Inter;
+
+  span {
+    line-height: 18px;
+  }
+}
+
+.action-btn {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 16px;
+  button {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    color: #000000;
+    gap: 4px;
+    font-family: Inter;
+  }
+}
+
+.ant-btn-link:disabled {
+  opacity: 0.5;
+}
+
+.create-menu {
+  padding: 2px 5px;
+
+  &:hover {
+    background: #EFEFF0;
+    padding: 2px 5px;
+    border-radius: 4px;
+  }
+}
+
+.state--span {
+  min-width: 80px;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 13px;
+  position: relative;
+  padding-left: 18px;
+  color: #000000;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+  }
+}
+
+.state--noStart {
+  @extend .state--span;
+
+  &::before {
+    background: #CFCFD9;
+  }
+}
+
+.state--queued {
+  @extend .state--span;
+
+  &::before {
+    background: #FFAE56;
+  }
+}
+
+.state--inProgress {
+  @extend .state--span;
+
+  &::before {
+    background: #6CD787;
+  }
+}
+
+.state--completed {
+  @extend .state--span;
+
+  &::before {
+    background: #7F63F4;
+  }
+}
+
+.state--pause {
+  @extend .state--span;
+
+  &::before {
+    background: #999999;
+  }
+}
+
+.state--actionRequired {
+  @extend .state--span;
+
+  &::before {
+    background: #FF557A;
+  }
+}
+
+.state--error {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  @extend .state--span;
+
+  &::before {
+    background: #FF0B1A;
+  }
+}
+
+.table-pagination {
+  font-size: 13px;
+  font-family: Inter;
+
+  :deep(li) {
+    height: 28px;
+    line-height: 26px;
+  }
+
+  :deep(.ant-select-selector) {
+    height: 28px;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    font-family: Inter;
+  }
+}
+
+:deep(.clickable-row) {
+  cursor: pointer;
+}
+
+:deep(.queued-row) {
+  cursor: default;
+}
+
+.text-ellipsis-span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

@@ -1,0 +1,15 @@
+.layout-wrap {
+	@apply h-[100vh] overflow-hidden bg-[#f1f3f5];
+  .header {
+    @apply h-[65px] bg-white flex items-center justify-center border-b-1 border-[#ebebeb];
+    .back-btn {
+	    @apply flex cursor-pointer font-[Inter];
+      .back-icon {
+	      @apply mr-[8px] text-[12px];
+      }
+    }
+    .title {
+	    @apply text-[16px] fw-[600] font-[Inter];
+    }
+  }
+}

@@ -1,0 +1,13 @@
+allowBuilds:
+  '@parcel/watcher': true
+  core-js: true
+  rete: true
+patchedDependencies:
+  '@unocss/transformer-directives@66.7.5': patches/@unocss__transformer-directives@66.7.5.patch
+overrides:
+  dompurify: '^3.4.17'
+  follow-redirects: '^1.16.1'
+  source-map-js: '^1.2.2'
+  undici: '^6.29.1'
+  vue: '^3.5.42'
+  zod: '^4.6.6'

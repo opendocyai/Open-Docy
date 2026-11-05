@@ -1,0 +1,15 @@
+.modal-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .input {
+    margin-top: 25px;
+    height: 40px;
+  }
+  .ant-input,
+  .ant-input-affix-wrapper {
+    border-radius: 10px;
+    height: 54px;
+  }
+}

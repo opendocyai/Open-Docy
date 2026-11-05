@@ -1,0 +1,50 @@
+.logs-card-item {
+  @apply flex-none p-[15px] rounded-[10px] text-[12px] font-[Inter];
+  @apply border border-[#EEEFF1] border-solid;
+  @apply flex items-center flex-wrap gap-3 items-center min-w-[256px];
+}
+.logs-card-item-left {
+  @apply flex-none;
+  .left-box {
+    @apply w-[49px] h-[49px] rounded-[14px] text-[20px];
+    @apply flex items-center justify-center;
+    .icon {
+      :deep(svg) {
+        @apply mb-0;
+      }
+    }
+    &.records {
+      @apply bg-[#EBE7FE];
+    }
+    &.use {
+      @apply bg-[#ECF5FD];
+    }
+    &.status-success {
+      @apply bg-[#DAF9E5];
+    }
+    &.status-error {
+      @apply bg-[#FFF0F0];
+    }
+    &.status-warning {
+      @apply bg-[#FFF6DE];
+    }
+  }
+}
+.logs-card-item-right {
+  @apply flex-1 flex flex-col justify-between gap-1.5;
+  .name {
+    @apply font-[Inter] fw-400 text-[12px] c-[#555];
+  }
+  .num {
+    @apply font-[Inter-SemiBold,Inter] fw-600 text-[24px] c-black h-[28px] lh-[28px];
+  }
+  .status {
+    @apply font-[Inter-SemiBold,Inter] fw-600 text-[15px] c-[#17C653] h-[28px] lh-[28px];
+  }
+  .ratio {
+    @apply font-[Inter] fw-400 text-[12px] c-[#BABABA];
+    &.week {
+      @apply c-[#FF4F4F];
+    }
+  }
+}

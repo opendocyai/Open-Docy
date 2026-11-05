@@ -1,0 +1,9 @@
+.file-viewer {
+  @apply w-full h-full overflow-hidden;
+  :deep(.fv-container) {
+    @apply w-full h-full;
+  }
+  :deep(.fv-viewer) {
+    @apply w-full h-full;
+  }
+}

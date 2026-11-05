@@ -1,0 +1,35 @@
+.manual-intervention{
+  @apply h-full overflow-hidden flex flex-col;
+  &--header,&--footer{
+    @apply flex-none py-[15px] px-[20px];
+  }
+  &--header{
+    @apply flex justify-between items-center;
+  }
+  &--header--title{
+    @apply flex-none text-[24px] font-[Inter-Medium,Inter];
+  }
+  &--content{
+    @apply flex-1 overflow-hidden px-[20px];
+    @apply flex gap-[15px];
+  }
+  &--content-box{
+    @apply flex-1 overflow-hidden p-[20px] px-[30px] w-full;
+    @apply md:w-[508px] md:flex-none;
+    @apply border border-solid border-[#F1F1F1] rounded-[10px];
+    .content-box--name{
+      @apply font-[Inter-SemiBold,Inter] text-[14px] fw-600;
+    }
+    .content-box--desc{
+      @apply text-[12px] font-[Inter] fw-400 c-[#999999];
+    }
+  }
+  &--footer{
+    @apply flex justify-end items-center gap-[15px] mt-[15px];
+    @apply border-t border-solid border-[#E9E9E9];
+    .ant-btn{
+      @apply text-[13px] font-[Inter] shadow-none;
+      @apply flex items-center justify-center gap-[10px];
+    }
+  }
+}

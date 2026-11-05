@@ -1,0 +1,7 @@
+.home-logo {
+  @apply flex items-center gap-x-[10px];
+  cursor: pointer;
+  .logo-icon {
+    @apply w-[147px] h-[37px];
+  }
+}

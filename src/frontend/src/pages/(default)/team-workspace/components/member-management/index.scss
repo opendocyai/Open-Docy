@@ -1,0 +1,95 @@
+.member-wrap {
+  padding: 20px 30px 20px 50px;
+  width: 100%;
+  background-color: #ffffff;
+  overflow: hidden;
+  .title {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .user-info {
+    display: flex;
+
+    img {
+      width: 48px;
+      height: 48px;
+      border-radius: 100%;
+      margin-right: 16px;
+    }
+
+    .name-email {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      .name {
+        font-family: Inter;
+        font-weight: 500;
+        font-size: 14px;
+        color: #000000;
+      }
+
+      .email {
+        font-family: Inter;
+        font-weight: 400;
+        font-size: 12px;
+        color: #999999;
+      }
+    }
+  }
+}
+.member-table :deep(.ant-table-thead .ant-table-cell) {
+  color: #999999 !important;
+  height: 88px !important;
+  padding: 0px 6px !important;
+}
+
+.member-table :deep(.ant-table-tbody .ant-table-cell) {
+  height: 88px !important;
+  padding: 0px 6px !important;
+}
+.table-pagination {
+  font-size: 13px;
+  font-family: Inter;
+
+  :deep(li) {
+    height: 28px;
+    line-height: 26px;
+  }
+
+  :deep(.ant-select-selector) {
+    height: 28px;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    font-family: Inter;
+  }
+}
+
+.invite-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .icon {
+    font-size: 18px;
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+  }
+}
+
+.status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+  display: inline-block;
+}
+
+.member-table {
+  overflow: auto;
+  max-height: calc(100% - 80px);
+}

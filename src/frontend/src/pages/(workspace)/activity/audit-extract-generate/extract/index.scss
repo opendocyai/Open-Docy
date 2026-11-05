@@ -1,0 +1,71 @@
+.title {
+  @apply font-[Inter] fw-600 text-[16px];
+}
+
+.back {
+  @apply p-[15px] flex items-center justify-between;
+
+  &__copy {
+    @apply flex items-center gap-[8px];
+
+    &--btn {
+      @apply font-[inter] fw-400 text-[11px] bg-[#EAEAEA] rounded-[2px] c-[#BABABA] items-center gap-[5px];
+      @apply py-[2px] px-[5px] cursor-pointer hidden;
+
+      &--icon {
+        @apply flex-none;
+      }
+    }
+
+    &:hover &--btn {
+      @apply flex;
+    }
+  }
+}
+
+.quick-review {
+
+  &__header {
+    flex: 1;
+    @apply flex items-center justify-between bg-[#6AD49B] py-[8px] px-[14px] c-[#010101] text-[13px] fw-500;
+    @apply font-[Inter] fw-400 gap-[20px];
+
+    &--label {
+      @apply flex-none fw-500 text-[13px] pr-[30px];
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    &--download {
+      @apply flex-none flex items-center cursor-pointer gap-[4px] absolute right-[5px] top-[7px];
+    }
+  }
+
+  &__header-info {
+    @apply text-[13px] c-[#F27326] bg-white;
+  }
+}
+
+.quick-review__header-info {
+  height: 100%;
+}
+
+.extract-table {
+  overflow: auto;
+
+  :deep(.ant-table-cell) {
+    white-space: normal !important;
+    word-break: break-word !important;
+  }
+
+  :deep(.ant-table-body) {
+    overflow: auto !important;
+  }
+}
+
+.ant-btn-default:disabled {
+  color: #ffffff;
+  background-color: #DEDEDE !important;
+}

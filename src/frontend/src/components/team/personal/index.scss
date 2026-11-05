@@ -1,0 +1,251 @@
+.team-personal {
+  @apply px-[6px] my-[20px] flex ;
+}
+
+.ant-dropdown-link {
+  @apply cursor-pointer flex items-center justify-between w-full;
+  @apply bg-[#EFEFF0] px-[10px] py-[4px];
+  @apply rounded-[6px] gap-x-[5px];
+
+  .ant-dropdown-link-name {
+    @apply flex items-center gap-x-[10px];
+  }
+
+  .avatar {
+    @apply w-[28px] h-[28px] rounded-[4px] bg-[#9F9DF2] flex items-center justify-center;
+    @apply text-[14px] fw-400 font-[Inter] c-white;
+  }
+
+  .team-name {
+    @apply c-black text-[14px] fw-500 font-[Inter];
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 150px;
+    white-space: nowrap;
+  }
+
+  .team-icon {
+    @apply c-[#747474] text-[12px] fw-400 font-[Inter];
+  }
+}
+
+.ant-overlay {
+  @apply bg-white w-[282px] rounded-[6px];
+  @apply shadow-[0px_0px_10px_0px_#0000001A];
+  @apply p-[18px] flex flex-col gap-y-[20px];
+}
+
+.ant-overlay-item {
+  @apply flex flex-col gap-y-[10px];
+}
+
+.ant-overlay-title {
+  @apply c-[#999999] text-[12px] fw-400 font-[Inter];
+}
+
+.ant-overlay-card {
+  @apply flex flex-col items-start justify-between relative;
+  @apply bg-[#F7F7F9] rounded-[6px] py-[10px] px-[15px] cursor-pointer gap-[8px];
+  border: 1px solid #F7F7F9;
+
+  &:hover {
+    border: 1px solid #2E2BD9;
+  }
+}
+
+.ant-overlay-card-selected {
+  border: 1px solid #2E2BD9;
+  position: relative;
+}
+
+.selected-icon {
+  width: 18px;
+  height: 17px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: #2E2BD9;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.ant-overlay-card-item {
+  @apply flex items-center gap-x-[10px] w-full!;
+
+  .ant-overlay-card-item-icon {
+    @apply w-[28px] h-[28px] rounded-[4px] flex items-center justify-center;
+    @apply text-[14px] fw-400 font-[Inter] c-white;
+
+    .ant-overlay-card-item-icon-avatar {
+      @apply flex items-center justify-center
+    }
+  }
+
+  .ant-overlay-card-item-info {
+    @apply flex items-center gap-[10px] pr-[10px];
+    width: 100%;
+
+    &:hover .copy-btn {
+      opacity: 1;
+    }
+
+    .info-name {
+      @apply c-black text-[14px] fw-400 font-[Inter];
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      line-height: 16px;
+      max-height: calc(16px * 2);
+      word-break: break-word;
+    }
+  }
+}
+
+.id-box {
+  width: 100%;
+  @apply c-[#999999] text-[11px] flex items-center gap-[6px];
+
+  &:hover .copy-btn {
+    opacity: 1;
+  }
+}
+
+.copy-btn {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  @apply bg-[#EAEAEA] rounded-[2px] flex justify-center items-center p-[3px] c-[#BABABA] cursor-pointer;
+
+  &:hover {
+    @apply c-[#666666];
+  }
+}
+
+.info-tags {
+  @apply flex items-center gap-x-[5px];
+
+  .ant-tag {
+    @apply bg-[#E5E5F8] rounded-[4px] py-[1px] px-[6px];
+    @apply text-[10px] fw-400 font-[Inter] c-[#43434E];
+  }
+
+  .ant-tag-at {
+    @apply c-[#2E2BD9] bg-transparent;
+  }
+}
+
+.ant-overlay-card-icon {
+  @apply text-[18px] cursor-pointer;
+
+  .ant-overlay-card-icon-setting {
+    color: #555555;
+
+    &:hover {
+      color: #000000;
+    }
+  }
+}
+
+.new-space-btn {
+  @apply flex items-center justify-center;
+  @apply c-[#000000] text-[13px] fw-400 font-[Inter];
+  height: 34px;
+  border-color: #efefef;
+  border-radius: 6px;
+  margin-top: 2px;
+
+}
+
+.modal-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .footer-wrap {
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    margin: 10px 0 10px;
+
+    .ant-btn {
+      width: 102px;
+      height: 38px;
+      border: 1px solid #EEEFF1;
+      font-family: Inter;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 17px;
+      text-align: center;
+    }
+  }
+
+  .verify {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: center;
+    color: #000000;
+    margin: 55px 0;
+  }
+
+  .reset-btn {
+    width: 391px;
+    height: 54px;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    font-size: 16px;
+  }
+
+  .tips {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: #999999;
+  }
+
+  .input {
+    margin-top: 25px;
+    height: 40px;
+  }
+
+  .ant-input,
+  .ant-input-affix-wrapper {
+    border-radius: 10px;
+    height: 54px;
+  }
+}
+
+:deep(.team-personal-dropdown) {
+  width: 300px !important;
+  min-width: 300px !important;
+  transition: none !important;
+  animation: none !important;
+
+  .info-name,
+  .id-box {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+    display: inline-block;
+  }
+
+  .copy-btn {
+    display: none;
+    opacity: 0;
+  }
+
+  &:hover .copy-btn {
+    display: inline-flex;
+    opacity: 1;
+  }
+}

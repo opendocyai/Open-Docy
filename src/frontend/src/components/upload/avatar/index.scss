@@ -1,0 +1,5 @@
+.upload-avatar {
+  @apply rounded-full cursor-pointer;
+  @apply w-[66px] h-[66px] rounded-full overflow-hidden ;
+  @apply flex items-center justify-center relative;
+}

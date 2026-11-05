@@ -1,0 +1,115 @@
+.base-aside {
+  @apply flex flex-col justify-between h-screen;
+}
+
+.agent-info-wrap {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 63px);
+
+  .agent-info-content {
+    padding: 20px 30px 20px 50px;
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.agent-info-content-wrap {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  padding: 20px 10%;
+  background: #fff;
+
+  .agent-info {
+    align-items: center;
+    margin-bottom: 40px;
+
+    .title {
+      font-family: Inter;
+      font-weight: 600;
+      font-size: 20px;
+      color: #000000;
+      margin-top: 50px;
+      margin-bottom: 20px;
+    }
+
+    .desc {
+      font-family: Inter;
+      font-weight: 400;
+      font-size: 14px;
+      color: #999999;
+    }
+  }
+
+  .agent-info-label {
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 13px;
+    color: #999999;
+    margin: 0px 0 20px;
+  }
+
+  .agent-info-value {
+
+    .name-input,
+    .ant-input {
+      height: 42px;
+      max-width: 830px;
+    }
+
+    :deep(.ant-form-item-label) {
+      padding: 0;
+    }
+
+    :deep(.ant-form-item-label label) {
+      color: #999999;
+      font-family: "Inter";
+      font-weight: 500;
+      font-size: 13px;
+      color: #999999;
+      margin: 0px 0 10px;
+      padding: 0;
+    }
+  }
+}
+
+.create-agent-footer {
+  @apply flex items-center justify-end pr-1/10;
+  @apply h-[63px] gap-[16px] bg-white border-t-1 border-t-[#E9E9E9];
+
+  .footer-btn {
+    @apply w-[102px] h-[38px] font-[Inter];
+  }
+}
+
+.ant-btn-primary:disabled {
+  color: #ffffff;
+  background-color: #2e2bd9;
+  box-shadow: none;
+  opacity: 0.5;
+}
+
+.upload-avatar {
+  border-radius: 100% !important;
+  cursor: pointer;
+  @apply w-[66px] h-[66px] rounded-full overflow-hidden;
+  @apply flex items-center justify-center relative;
+}
+
+.avatar-input {
+  @apply w-full h-full opacity-1 absolute cursor-pointer z-10;
+}
+
+.page-container {
+  padding: 24px;
+}
+
+.more-btn {
+  &:hover {
+    opacity: 0.8;
+  }
+}

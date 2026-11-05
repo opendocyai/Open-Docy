@@ -1,0 +1,98 @@
+.ant-layout-header {
+  @apply w-full h-[67px] bg-white shadow-[0px_4px_4px_0px_rgba(0,0,0,0.12)];
+  @apply fixed top-0 left-0 z-10;
+  @apply flex items-center justify-between px-[20px];
+  .back {
+    @apply flex-none w-[150px];
+    .ant-btn-link {
+      @apply text-[#999999] font-[Inter] font-500 text-[12px];
+      @apply flex items-center gap-[2px];
+    }
+  }
+  .title {
+    @apply flex-none;
+    @apply text-[#000] font-[Inter] font-600 text-[16px];
+    @apply flex items-center gap-[5px];
+  }
+  .btn-publish {
+    @apply flex-none w-[150px] flex items-center justify-end gap-[15px];
+  }
+}
+
+.table-background {
+  background-image: radial-gradient(#dedede 1.6px, transparent 1.6px),
+    radial-gradient(#dedede 0.8px, transparent 0.8px);
+  background-size: 15px 15px;
+  background-position: 0 0, 16px 16px;
+}
+
+.ant-layout-sider {
+  @apply h-[calc(100%-30px)] my-[15px] bg-transparent;
+}
+
+.audit-container {
+  @extend .table-background;
+  @apply w-full h-full;
+  @apply pt-[67px] flex relative overflow-hidden;
+}
+.ant-input {
+  @apply min-h-[40px] bg-[#F3F3F3] font-[Inter] fw-400 text-[13px] c-[#000];
+}
+
+.ant-input-affix-wrapper{
+  @apply min-h-[40px] bg-[#F3F3F3] font-[Inter] fw-400 text-[13px] c-[#000];
+  :deep(.ant-input) {
+    @apply bg-[#F3F3F3] font-[Inter] fw-400 text-[13px] c-[#000];
+  }
+}
+
+.dropdown-menu{
+  @apply w-[282px] py-[15px] bg-white bg-clip-padding;
+  @apply rounded-8px outline-none;
+  @apply shadow-[0_6px_16px_0_rgba(0,0,0,0.08),0_3px_6px_-4px_rgba(0,0,0,0.12),0_9px_28px_8px_rgba(0,0,0,0.05)];
+  @apply flex flex-col gap-[15px];
+  &--line{
+    @apply w-full h-[1px] bg-[#F0F0F0];
+  }
+  &--item{
+    @apply px-[15px] flex items-center justify-between cursor-pointer;
+    &--info{
+      @apply flex items-center gap-[10px];
+      &--icon{
+        @apply text-[18px];
+      }
+      &--title,&--name{
+        @apply text-[13px] font-[Inter] c-[#333];
+      }
+      &--title{
+        @apply fw-500 c-[#000];
+      }
+      &--name{
+        @apply  fw-400;
+      }
+    }
+    .r-icon{
+      @apply text-[18px] c-[#CCCCCC];
+    }
+  }
+}
+
+.ant-layout-sider{
+  @apply ml-[15px];
+}
+
+.spin-overlay {
+  position: absolute;
+  background-color: #FFFFFF;
+  height: 100%;
+  width: 100%;
+  z-index: 1000;
+  opacity: 0.7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+:deep(.ant-modal-content) {
+  @apply pb-0!;
+}

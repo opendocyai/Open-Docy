@@ -1,0 +1,19 @@
+Inter
+=====
+
+Files: `src/assets/fonts/inter.otf` (embedded as base64 in the built
+`style.css`).
+
+Copyright 2017-2019 The Inter project authors
+https://github.com/rsms/inter
+
+"Inter UI" and "Inter" are trademarks of Rasmus Andersson (rsms.me).
+
+Licensed under the SIL Open Font License, Version 1.1 — full text in
+[`OFL.txt`](./OFL.txt).
+
+OFL summary: the font may be used, studied, modified and redistributed
+(including bundled/embedded inside this project and its published build),
+provided that (a) the font is not sold on its own, (b) this copyright notice
+and the license travel with it, and (c) any modified version is not distributed
+under the reserved font name "Inter".

@@ -1,0 +1,15 @@
+.log-title {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  flex: 1;
+  min-width: 0;
+}
+:deep(.ant-collapse-header-text) {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+:deep(.ant-collapse-item .ant-collapse-header) {
+  padding: 6px 20px!important;
+}

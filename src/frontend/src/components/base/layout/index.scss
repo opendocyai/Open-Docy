@@ -1,0 +1,12 @@
+.ant-layout {
+  @apply w-full h-full bg-[#ffffff];
+  .ant-layout-sider {
+    @apply bg-[#FBFBFB];
+  }
+  .ant-layout-header{
+    @apply bg-white border-[#1C1C1C1A] border-b-width-[1px] border-b-solid p-inline-0;
+  }
+  .ant-layout-content{
+    @apply relative;
+  }
+}

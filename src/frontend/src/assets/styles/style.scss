@@ -1,0 +1,79 @@
+@forward "fonts";
+
+@use "sass:math";
+@use "fonts" as *;
+
+
+html,
+body {
+  @apply overscroll-none;
+  @apply font-[Inter];
+}
+html,
+body,
+#app {
+  @apply box-border h-full min-h-screen;
+  @apply font-[Inter];
+}
+
+.confirm-confirm-modal .ant-modal-content {
+  text-align: center;
+  padding: 30px 40px 24px;
+  display: flex;
+  justify-content: center;
+}
+.confirm-confirm-modal .ant-modal-confirm-btns {
+  gap: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.confirm-confirm-modal button {
+  width: 102px;
+  height: 38px;
+  font-family: Inter;
+}
+
+.confirm-modal-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.confirm-modal-title {
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.confirm-modal-content {
+  font-size: 12px;
+  font-family: Inter;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.ant-btn.ant-btn-link:hover{
+  color: #7f63f4;
+}
+
+.ant-input,.ant-input-password{
+  background-color: #f9f9f9;
+  border-color: #f9f9f9;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #a8a8a8;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}

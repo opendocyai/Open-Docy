@@ -1,0 +1,30 @@
+import { PdfState, PdfMethodsType } from '..';
+export declare class PdfHandlers {
+    state: PdfState;
+    methods: PdfMethodsType;
+    constructor(state: PdfState, methods: PdfMethodsType);
+    finishEditingSelection: () => void;
+    cancelEditingSelection: () => void;
+    copySelectedSelectionsToClipboard: () => void;
+    copyAllSelectionsToClipboard: () => void;
+    pasteSelections: () => void;
+    _handleKeyDown(event: KeyboardEvent): void;
+    handleKeyDown: import('lodash').DebouncedFunc<(event: KeyboardEvent) => void>;
+    removeSelection(index: number): void;
+    private getCanvas;
+    private getXY;
+    handleMouseDown(event: MouseEvent, pageNumber: number): Promise<void>;
+    handleMouseMove(event: MouseEvent, pageNumber: number): Promise<void>;
+    private getCursorStyle;
+    private handleResizeSelection;
+    private handleDragSelection;
+    private handleCreateSelection;
+    private createUpdatedSelection;
+    private calculateNaturalCoordinates;
+    private calculateImageNaturalCoordinates;
+    private calculatePdfNaturalCoordinates;
+    handleMouseUp(event: MouseEvent, pageNumber: number): Promise<void>;
+    handleMouseLeave(): void;
+    reset(): void;
+    destroy(): void;
+}
