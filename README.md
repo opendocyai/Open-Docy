@@ -7,7 +7,7 @@
 
 https://github.com/user-attachments/assets/6fd1aaf4-0a96-4639-b97d-4a2a3293db0d
 
-*Install Open Docy in 72 seconds: a real run on a clean Mac.*
+*Install Open Docy: a real run on a clean Mac.*
 
 If Open Docy is useful to you, a star on this repo helps other people find it.
 
