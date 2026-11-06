@@ -6,6 +6,12 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.md)
 [![Python](https://img.shields.io/badge/python-3.11--3.13-blue.svg)](https://www.python.org/)
 
+https://github.com/user-attachments/assets/5d431bc6-dd24-4fbb-a6d0-f95dca164644
+
+*Install Open Docy in 72 seconds: a real run on a clean Mac.*
+
+If Open Docy is useful to you, a star on this repo helps other people find it.
+
 Open Docy is the open-source edition of the Docy AI platform: proprietary modules (billing, marketplace) are stripped, and heavy runtime dependencies (Redis, RabbitMQ, Celery, PostgreSQL) are replaced with lightweight, self-contained alternatives.
 
 ---
