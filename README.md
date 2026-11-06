@@ -2,11 +2,10 @@
 
 > **The open-source Agent OS for decisions you can audit.**
 > Open Docy is the self-hosted edition of Docy AI. Compose AI agents on a visual canvas from nodes that extract, check, branch, search, write and ask a person. Run them on documents (PDF, DOC/DOCX, XLS/XLSX, PPT/PPTX, JPG/JPEG/PNG, TXT, JSON, CSV, ZIP) on your own infrastructure, and keep the record of what each one decided and why — through the web UI and a REST API with webhook event push. The only runtime dependency is SQLite.
-
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.md)
 [![Python](https://img.shields.io/badge/python-3.11--3.13-blue.svg)](https://www.python.org/)
 
-https://github.com/user-attachments/assets/5d431bc6-dd24-4fbb-a6d0-f95dca164644
+https://github.com/user-attachments/assets/6fd1aaf4-0a96-4639-b97d-4a2a3293db0d
 
 *Install Open Docy in 72 seconds: a real run on a clean Mac.*
 
